@@ -1,5 +1,5 @@
 
-# TeamXX — Clinical Prediction Dashboard (Assignment 2)
+#  Clinical Prediction Dashboard 
 
 This repository contains the code, dashboard, and pipeline scripts for the Diabetes prediction assignment under temporal shift.
 
