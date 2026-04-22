@@ -8,7 +8,7 @@ Important: The raw CSV dataset is large and should NOT be committed. Keep the CS
 Minimum requirements
 
 - Python 3.10+ (3.12 recommended)
-- ~2 GB free disk space for intermediate files
+- 2 GB free disk space for intermediate files
 
 Recommended dependencies (install in a virtual environment):
 
