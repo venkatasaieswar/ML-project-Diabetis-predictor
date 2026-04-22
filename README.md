@@ -58,6 +58,27 @@ After completing the pipeline, start the Streamlit dashboard which reads precomp
 
    streamlit run TeamXX_Assignment2_dashboard.py
 
+Alternative: using uv
+
+If you prefer the lightweight `uv` wrapper, here are equivalent commands using `uv run`.
+
+1. Install uv (optional):
+
+   pip install uv
+
+2. Run the pipeline with uv (example sequence):
+
+   uv run python3 src/04_aggregate.py
+   uv run python3 src/05_split_and_label.py
+   uv run python3 src/07_train.py
+   uv run python3 src/08_continual.py
+   uv run python3 src/09_explain_eda.py
+   uv run python3 src/10_dump_joblib.py
+
+3. Start the dashboard with uv:
+
+   uv run streamlit run TeamXX_Assignment2_dashboard.py
+
 What to commit to Git
 
 - Do commit: source code in `src/`, the dashboard script, README, and lightweight outputs (models and small figures) if desired.
