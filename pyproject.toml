@@ -20,3 +20,30 @@ dependencies = [
 
 [project.scripts]
 run-dashboard = "streamlit.cli:main"
+
+[tool.commands]
+# Recommended commands to run the pipeline (canonical python commands)
+pipeline = [
+  "python3 src/04_aggregate.py",
+  "python3 src/05_split_and_label.py",
+  "python3 src/07_train.py",
+  "python3 src/08_continual.py",
+  "python3 src/09_explain_eda.py",
+  "python3 src/10_dump_joblib.py",
+]
+start_dashboard = [
+  "streamlit run TeamXX_Assignment2_dashboard.py",
+]
+
+# Alternative using uv (if you prefer the uv helper wrapper)
+uv_pipeline = [
+  "uv run python3 src/04_aggregate.py",
+  "uv run python3 src/05_split_and_label.py",
+  "uv run python3 src/07_train.py",
+  "uv run python3 src/08_continual.py",
+  "uv run python3 src/09_explain_eda.py",
+  "uv run python3 src/10_dump_joblib.py",
+]
+uv_start_dashboard = [
+  "uv run streamlit run TeamXX_Assignment2_dashboard.py",
+]
